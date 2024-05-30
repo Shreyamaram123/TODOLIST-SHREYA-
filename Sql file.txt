@@ -1,0 +1,334 @@
+mysql> use database demo;
+ERROR 1049 (42000): Unknown database 'database'
+mysql> use demo;
+Database changed
+mysql> create table students(name varchar(20),age int,rollnumber int);
+Query OK, 0 rows affected (0.07 sec)
+
+mysql> insert into students (name,age,rollnumber) values('A',21,1);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into students (name,age,rollnumber) values('B',20,2);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into students (name,age,rollnumber) values('C',20,3);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into students (name,age,rollnumber) values('D',21,4);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into students (name,age,rollnumber) values('E',21,5);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into students (name,age,rollnumber) values('F',22,6);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into students (name,age,rollnumber) values('G',20,7);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into students (name,age,rollnumber) values('H',21,8);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from students;
++------+------+------------+
+| name | age  | rollnumber |
++------+------+------------+
+| A    |   21 |          1 |
+| B    |   20 |          2 |
+| C    |   20 |          3 |
+| D    |   21 |          4 |
+| E    |   21 |          5 |
+| F    |   22 |          6 |
+| G    |   20 |          7 |
+| H    |   21 |          8 |
++------+------+------------+
+8 rows in set (0.01 sec)
+
+mysql> update students set age=21 where rollnumber=7;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from students where age=22;
++------+------+------------+
+| name | age  | rollnumber |
++------+------+------------+
+| F    |   22 |          6 |
++------+------+------------+
+1 row in set (0.00 sec)
+
+mysql> delete from students where age=22;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from students;
++------+------+------------+
+| name | age  | rollnumber |
++------+------+------------+
+| A    |   21 |          1 |
+| B    |   20 |          2 |
+| C    |   20 |          3 |
+| D    |   21 |          4 |
+| E    |   21 |          5 |
+| G    |   21 |          7 |
+| H    |   21 |          8 |
++------+------+------------+
+7 rows in set (0.00 sec)
+
+mysql> drop table students;
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> select * from students;
+ERROR 1146 (42S02): Table 'demo.students' doesn't exist
+mysql>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mysql> use database demo;
+ERROR 1049 (42000): Unknown database 'database'
+mysql> use demo;
+Database changed
+mysql> create table students(name varchar(20),age int,rollnumber int);
+Query OK, 0 rows affected (0.07 sec)
+
+mysql> insert into students (name,age,rollnumber) values('A',21,1);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into students (name,age,rollnumber) values('B',20,2);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into students (name,age,rollnumber) values('C',20,3);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into students (name,age,rollnumber) values('D',21,4);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> ^C
+mysql> ^C
+mysql> ^C
+mysql> insert into students (name,age,rollnumber) values('E',21,5);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into students (name,age,rollnumber) values('F',22,6);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into students (name,age,rollnumber) values('G',20,7);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into students (name,age,rollnumber) values('H',21,8);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from students;
++------+------+------------+
+| name | age  | rollnumber |
++------+------+------------+
+| A    |   21 |          1 |
+| B    |   20 |          2 |
+| C    |   20 |          3 |
+| D    |   21 |          4 |
+| E    |   21 |          5 |
+| F    |   22 |          6 |
+| G    |   20 |          7 |
+| H    |   21 |          8 |
++------+------+------------+
+8 rows in set (0.01 sec)
+
+mysql> update students set age=21 where rollnumber=7;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from students where age=22;
++------+------+------------+
+| name | age  | rollnumber |
++------+------+------------+
+| F    |   22 |          6 |
++------+------+------------+
+1 row in set (0.00 sec)
+
+mysql> delete from students where age=22;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from students;
++------+------+------------+
+| name | age  | rollnumber |
++------+------+------------+
+| A    |   21 |          1 |
+| B    |   20 |          2 |
+| C    |   20 |          3 |
+| D    |   21 |          4 |
+| E    |   21 |          5 |
+| G    |   21 |          7 |
+| H    |   21 |          8 |
++------+------+------------+
+7 rows in set (0.00 sec)
+
+mysql> drop table students;
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> select * from students;
+ERROR 1146 (42S02): Table 'demo.students' doesn't exist
+mysql>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
